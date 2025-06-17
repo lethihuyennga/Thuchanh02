@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Điều Hướng Siêu Đẹp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #e1bee7);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #6a1b9a, #283593);
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 25px;
+      padding: 10px 18px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .navbar a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffeb3b;
+    }
+
+    .navbar a:active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 32px;
+      color: #4a148c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#monhoc">Môn học</a>
+    <a href="#thoikhoabieu">Thời khoá biểu</a>
+    <a href="#dangky">Đăng ký</a>
+  </div>
+
+  <h1>🎉 Chào mừng bạn đến với website cá nhân 🎉</h1>
+
+</body>
+</html>
+
