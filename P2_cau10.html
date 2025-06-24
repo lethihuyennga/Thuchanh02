@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio cá nhân</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fafafa;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 28px;
+    }
+
+    p.intro {
+      font-size: 16px;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project .content {
+      padding: 16px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .project p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-1/496851412_1752383275316433_2878894279749860555_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFXGKUWeHEGZYibimh7w3n5oWptSsuD22Cham1Ky4PbYFjl4D9hOA8YzRCrNjITurLEEFHxv7FeTQ98jHDoCYpP&_nc_ohc=uLzmqIn9H3QQ7kNvwFRVGXd&_nc_oc=AdlYCiAx19yb4Y3VUevL_YQpRERaVEjPew7Icfjn3FcvB2X2MuD2Vg1n2KMXAxccs5QmgC73_wX67YuXjRysuV6x&_nc_zt=24&_nc_ht=scontent.fsgn5-13.fna&_nc_gid=AtETJtc3dlzhzptkjX-lDg&oh=00_AfPFe6BZy1Mf6-HMcZWjDGVSr4wqAxSOaEa_QABi55yhDA&oe=686026EF" alt="Ảnh đại diện">
+    <h1>Lê Thị Huyền Nga</h1>
+    <p class="intro">Sinh viên Thương Mại Điện Tử tại IUH, đam mê sáng tạo nội dung và kinh doanh trực tuyến. Đây là một số dự án mình đã thực hiện.</p>
+  </header>
+
+  <section class="projects">
+    <div class="project">
+      <img src="https://picsum.photos/400/200?random=1" alt="Dự án 1">
+      <div class="content">
+        <h3>Dự án Website Bán Hàng</h3>
+        <p>Xây dựng giao diện và chức năng cơ bản cho một website thương mại điện tử dùng HTML/CSS/JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://picsum.photos/400/200?random=2" alt="Dự án 2">
+      <div class="content">
+        <h3>Tiếp thị liên kết TikTok</h3>
+        <p>Triển khai kênh TikTok tiếp thị sản phẩm, tạo video sáng tạo thu hút hàng nghìn lượt xem và tương tác.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://picsum.photos/400/200?random=3" alt="Dự án 3">
+      <div class="content">
+        <h3>Green Library</h3>
+        <p>Dự án thư viện xanh kết hợp văn hóa đọc và bảo vệ môi trường, xây dựng mô hình cộng đồng bền vững.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
